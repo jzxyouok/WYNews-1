@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C214F9251CFE7B6600B78F9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9241CFE7B6600B78F9E /* main.m */; };
-		C214F9281CFE7B6600B78F9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9271CFE7B6600B78F9E /* AppDelegate.m */; };
-		C214F92B1CFE7B6600B78F9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F92A1CFE7B6600B78F9E /* ViewController.m */; };
 		C214F92E1CFE7B6600B78F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C214F92C1CFE7B6600B78F9E /* Main.storyboard */; };
 		C214F9301CFE7B6600B78F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C214F92F1CFE7B6600B78F9E /* Assets.xcassets */; };
 		C214F9331CFE7B6600B78F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C214F9311CFE7B6600B78F9E /* LaunchScreen.storyboard */; };
 		C214F93E1CFE7B6600B78F9E /* WYNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F93D1CFE7B6600B78F9E /* WYNewsTests.m */; };
 		C214F9491CFE7B6600B78F9E /* WYNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9481CFE7B6600B78F9E /* WYNewsUITests.m */; };
+		C214F97D1CFEC8B100B78F9E /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F96D1CFEC8B100B78F9E /* UIImage+color.m */; };
+		C214F97E1CFEC8B100B78F9E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F96F1CFEC8B100B78F9E /* UIView+Extension.m */; };
+		C214F97F1CFEC8B100B78F9E /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9721CFEC8B100B78F9E /* WYMainViewController.m */; };
+		C214F9801CFEC8B100B78F9E /* WYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9741CFEC8B100B78F9E /* WYNavigationController.m */; };
+		C214F9811CFEC8B100B78F9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9771CFEC8B100B78F9E /* AppDelegate.m */; };
+		C214F9831CFEC8B100B78F9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9791CFEC8B100B78F9E /* main.m */; };
+		C214F9841CFEC8B100B78F9E /* WYLeftMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F97C1CFEC8B100B78F9E /* WYLeftMenu.m */; };
+		C214F9861CFEC91900B78F9E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C214F9851CFEC91900B78F9E /* Info.plist */; };
+		C214F98F1CFEDCE000B78F9E /* WYTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F98E1CFEDCE000B78F9E /* WYTitleView.m */; };
+		C214F99E1CFEF0B600B78F9E /* WYNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F99D1CFEF0B600B78F9E /* WYNewsTableViewController.m */; };
+		C214F9A11CFF06DF00B78F9E /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C214F9A01CFF06DF00B78F9E /* UIBarButtonItem+Extension.m */; };
+		C26EE3CC1CFFD6B100CB5E97 /* WYReadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3CB1CFFD6B100CB5E97 /* WYReadingTableViewController.m */; };
+		C26EE3CF1D00295B00CB5E97 /* WYLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */; };
+		C26EE3D41D005C9300CB5E97 /* WYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +46,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C214F9201CFE7B6600B78F9E /* WYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C214F9241CFE7B6600B78F9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C214F9261CFE7B6600B78F9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C214F9271CFE7B6600B78F9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C214F9291CFE7B6600B78F9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C214F92A1CFE7B6600B78F9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C214F9201CFE7B6600B78F9E /* 郭慧峰新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "郭慧峰新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C214F92D1CFE7B6600B78F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C214F92F1CFE7B6600B78F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C214F9321CFE7B6600B78F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C214F9341CFE7B6600B78F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C214F9391CFE7B6600B78F9E /* WYNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C214F93D1CFE7B6600B78F9E /* WYNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsTests.m; sourceTree = "<group>"; };
 		C214F93F1CFE7B6600B78F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C214F9441CFE7B6600B78F9E /* WYNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C214F9481CFE7B6600B78F9E /* WYNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsUITests.m; sourceTree = "<group>"; };
 		C214F94A1CFE7B6600B78F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C214F9631CFE858200B78F9E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		C214F96C1CFEC8B100B78F9E /* UIImage+color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+color.h"; sourceTree = "<group>"; };
+		C214F96D1CFEC8B100B78F9E /* UIImage+color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+color.m"; sourceTree = "<group>"; };
+		C214F96E1CFEC8B100B78F9E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		C214F96F1CFEC8B100B78F9E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		C214F9711CFEC8B100B78F9E /* WYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainViewController.h; sourceTree = "<group>"; };
+		C214F9721CFEC8B100B78F9E /* WYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainViewController.m; sourceTree = "<group>"; };
+		C214F9731CFEC8B100B78F9E /* WYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationController.h; sourceTree = "<group>"; };
+		C214F9741CFEC8B100B78F9E /* WYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationController.m; sourceTree = "<group>"; };
+		C214F9761CFEC8B100B78F9E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C214F9771CFEC8B100B78F9E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C214F9791CFEC8B100B78F9E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C214F97B1CFEC8B100B78F9E /* WYLeftMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLeftMenu.h; sourceTree = "<group>"; };
+		C214F97C1CFEC8B100B78F9E /* WYLeftMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLeftMenu.m; sourceTree = "<group>"; };
+		C214F9851CFEC91900B78F9E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C214F98D1CFEDCE000B78F9E /* WYTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTitleView.h; sourceTree = "<group>"; };
+		C214F98E1CFEDCE000B78F9E /* WYTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTitleView.m; sourceTree = "<group>"; };
+		C214F99C1CFEF0B600B78F9E /* WYNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsTableViewController.h; sourceTree = "<group>"; };
+		C214F99D1CFEF0B600B78F9E /* WYNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsTableViewController.m; sourceTree = "<group>"; };
+		C214F99F1CFF06DF00B78F9E /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		C214F9A01CFF06DF00B78F9E /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		C26EE3CA1CFFD6B100CB5E97 /* WYReadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYReadingTableViewController.h; sourceTree = "<group>"; };
+		C26EE3CB1CFFD6B100CB5E97 /* WYReadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYReadingTableViewController.m; sourceTree = "<group>"; };
+		C26EE3CD1D00295B00CB5E97 /* WYLeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLeftMenuButton.h; sourceTree = "<group>"; };
+		C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLeftMenuButton.m; sourceTree = "<group>"; };
+		C26EE3D21D005C9300CB5E97 /* WYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationBar.h; sourceTree = "<group>"; };
+		C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +123,7 @@
 		C214F9211CFE7B6600B78F9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C214F9201CFE7B6600B78F9E /* WYNews.app */,
+				C214F9201CFE7B6600B78F9E /* 郭慧峰新闻.app */,
 				C214F9391CFE7B6600B78F9E /* WYNewsTests.xctest */,
 				C214F9441CFE7B6600B78F9E /* WYNewsUITests.xctest */,
 			);
@@ -101,14 +133,11 @@
 		C214F9221CFE7B6600B78F9E /* WYNews */ = {
 			isa = PBXGroup;
 			children = (
-				C214F9261CFE7B6600B78F9E /* AppDelegate.h */,
-				C214F9271CFE7B6600B78F9E /* AppDelegate.m */,
-				C214F9291CFE7B6600B78F9E /* ViewController.h */,
-				C214F92A1CFE7B6600B78F9E /* ViewController.m */,
-				C214F92C1CFE7B6600B78F9E /* Main.storyboard */,
+				C214F96A1CFEC8B100B78F9E /* classes */,
+				C214F9751CFEC8B100B78F9E /* Other */,
 				C214F92F1CFE7B6600B78F9E /* Assets.xcassets */,
+				C214F92C1CFE7B6600B78F9E /* Main.storyboard */,
 				C214F9311CFE7B6600B78F9E /* LaunchScreen.storyboard */,
-				C214F9341CFE7B6600B78F9E /* Info.plist */,
 				C214F9231CFE7B6600B78F9E /* Supporting Files */,
 			);
 			path = WYNews;
@@ -117,7 +146,8 @@
 		C214F9231CFE7B6600B78F9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C214F9241CFE7B6600B78F9E /* main.m */,
+				C214F9851CFEC91900B78F9E /* Info.plist */,
+				C214F9631CFE858200B78F9E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +170,70 @@
 			path = WYNewsUITests;
 			sourceTree = "<group>";
 		};
+		C214F96A1CFEC8B100B78F9E /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				C214F96B1CFEC8B100B78F9E /* Category */,
+				C214F9701CFEC8B100B78F9E /* Controller */,
+				C214F97A1CFEC8B100B78F9E /* View */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C214F96B1CFEC8B100B78F9E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C214F96C1CFEC8B100B78F9E /* UIImage+color.h */,
+				C214F96D1CFEC8B100B78F9E /* UIImage+color.m */,
+				C214F96E1CFEC8B100B78F9E /* UIView+Extension.h */,
+				C214F96F1CFEC8B100B78F9E /* UIView+Extension.m */,
+				C214F99F1CFF06DF00B78F9E /* UIBarButtonItem+Extension.h */,
+				C214F9A01CFF06DF00B78F9E /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C214F9701CFEC8B100B78F9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C214F9711CFEC8B100B78F9E /* WYMainViewController.h */,
+				C214F9721CFEC8B100B78F9E /* WYMainViewController.m */,
+				C214F9731CFEC8B100B78F9E /* WYNavigationController.h */,
+				C214F9741CFEC8B100B78F9E /* WYNavigationController.m */,
+				C214F99C1CFEF0B600B78F9E /* WYNewsTableViewController.h */,
+				C214F99D1CFEF0B600B78F9E /* WYNewsTableViewController.m */,
+				C26EE3CA1CFFD6B100CB5E97 /* WYReadingTableViewController.h */,
+				C26EE3CB1CFFD6B100CB5E97 /* WYReadingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C214F9751CFEC8B100B78F9E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C214F9761CFEC8B100B78F9E /* AppDelegate.h */,
+				C214F9771CFEC8B100B78F9E /* AppDelegate.m */,
+				C214F9791CFEC8B100B78F9E /* main.m */,
+			);
+			name = Other;
+			path = classes/Other;
+			sourceTree = "<group>";
+		};
+		C214F97A1CFEC8B100B78F9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C214F97B1CFEC8B100B78F9E /* WYLeftMenu.h */,
+				C214F97C1CFEC8B100B78F9E /* WYLeftMenu.m */,
+				C214F98D1CFEDCE000B78F9E /* WYTitleView.h */,
+				C214F98E1CFEDCE000B78F9E /* WYTitleView.m */,
+				C26EE3CD1D00295B00CB5E97 /* WYLeftMenuButton.h */,
+				C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */,
+				C26EE3D21D005C9300CB5E97 /* WYNavigationBar.h */,
+				C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,7 +251,7 @@
 			);
 			name = WYNews;
 			productName = WYNews;
-			productReference = C214F9201CFE7B6600B78F9E /* WYNews.app */;
+			productReference = C214F9201CFE7B6600B78F9E /* 郭慧峰新闻.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C214F9381CFE7B6600B78F9E /* WYNewsTests */ = {
@@ -246,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C214F9861CFEC91900B78F9E /* Info.plist in Resources */,
 				C214F9331CFE7B6600B78F9E /* LaunchScreen.storyboard in Resources */,
 				C214F9301CFE7B6600B78F9E /* Assets.xcassets in Resources */,
 				C214F92E1CFE7B6600B78F9E /* Main.storyboard in Resources */,
@@ -273,9 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C214F92B1CFE7B6600B78F9E /* ViewController.m in Sources */,
-				C214F9281CFE7B6600B78F9E /* AppDelegate.m in Sources */,
-				C214F9251CFE7B6600B78F9E /* main.m in Sources */,
+				C214F97F1CFEC8B100B78F9E /* WYMainViewController.m in Sources */,
+				C214F97E1CFEC8B100B78F9E /* UIView+Extension.m in Sources */,
+				C26EE3CF1D00295B00CB5E97 /* WYLeftMenuButton.m in Sources */,
+				C214F99E1CFEF0B600B78F9E /* WYNewsTableViewController.m in Sources */,
+				C214F97D1CFEC8B100B78F9E /* UIImage+color.m in Sources */,
+				C214F9841CFEC8B100B78F9E /* WYLeftMenu.m in Sources */,
+				C26EE3D41D005C9300CB5E97 /* WYNavigationBar.m in Sources */,
+				C214F9801CFEC8B100B78F9E /* WYNavigationController.m in Sources */,
+				C214F9A11CFF06DF00B78F9E /* UIBarButtonItem+Extension.m in Sources */,
+				C214F98F1CFEDCE000B78F9E /* WYTitleView.m in Sources */,
+				C214F9831CFEC8B100B78F9E /* main.m in Sources */,
+				C26EE3CC1CFFD6B100CB5E97 /* WYReadingTableViewController.m in Sources */,
+				C214F9811CFEC8B100B78F9E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +519,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ghf.WYNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghf.WYnews;
+				PRODUCT_NAME = "郭慧峰新闻";
 			};
 			name = Debug;
 		};
@@ -425,10 +534,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ghf.WYNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghf.WYnews;
+				PRODUCT_NAME = "郭慧峰新闻";
 			};
 			name = Release;
 		};
@@ -499,6 +612,7 @@
 				C214F94F1CFE7B6600B78F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C214F9501CFE7B6600B78F9E /* Build configuration list for PBXNativeTarget "WYNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +621,7 @@
 				C214F9521CFE7B6600B78F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C214F9531CFE7B6600B78F9E /* Build configuration list for PBXNativeTarget "WYNewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +630,7 @@
 				C214F9551CFE7B6600B78F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

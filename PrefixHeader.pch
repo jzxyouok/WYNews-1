@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  WYNews
+//
+//  Created by dabbyGHF on 16/6/1.
+//  Copyright © 2016年 dabbyGHF. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+
+#define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] = 8.0)
+#define screenWidth  [[UIScreen mainScreen]bounds].size.width
+#define screenHeight   [[UIScreen mainScreen]bounds].size.height
+
+// 自定义Log
+#ifdef DEBUG // 调试
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else // 发布打包
+#define MyLog(...)
+#endif
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+// RGB颜色
+#define WYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define WYColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define WYRandomColor WYColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#endif /* PrefixHeader_pch */
