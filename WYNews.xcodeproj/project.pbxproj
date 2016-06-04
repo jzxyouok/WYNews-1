@@ -26,6 +26,10 @@
 		C26EE3CC1CFFD6B100CB5E97 /* WYReadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3CB1CFFD6B100CB5E97 /* WYReadingTableViewController.m */; };
 		C26EE3CF1D00295B00CB5E97 /* WYLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */; };
 		C26EE3D41D005C9300CB5E97 /* WYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */; };
+		C2AEE7B91D015F630028D511 /* WYRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEE7B71D015F630028D511 /* WYRightMenuViewController.m */; };
+		C2AEE7BA1D015F630028D511 /* WYRightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2AEE7B81D015F630028D511 /* WYRightMenuViewController.xib */; };
+		C2AEE7C01D01B2AB0028D511 /* WYRightMenuCenterViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEE7BF1D01B2AB0028D511 /* WYRightMenuCenterViewRow.m */; };
+		C2AEE7C21D01B2F10028D511 /* WYRightMenuCenterViewRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2AEE7C11D01B2F10028D511 /* WYRightMenuCenterViewRow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,12 @@
 		C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLeftMenuButton.m; sourceTree = "<group>"; };
 		C26EE3D21D005C9300CB5E97 /* WYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationBar.h; sourceTree = "<group>"; };
 		C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationBar.m; sourceTree = "<group>"; };
+		C2AEE7B61D015F630028D511 /* WYRightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYRightMenuViewController.h; sourceTree = "<group>"; };
+		C2AEE7B71D015F630028D511 /* WYRightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYRightMenuViewController.m; sourceTree = "<group>"; };
+		C2AEE7B81D015F630028D511 /* WYRightMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WYRightMenuViewController.xib; path = ../Controller/WYRightMenuViewController.xib; sourceTree = "<group>"; };
+		C2AEE7BE1D01B2AB0028D511 /* WYRightMenuCenterViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYRightMenuCenterViewRow.h; sourceTree = "<group>"; };
+		C2AEE7BF1D01B2AB0028D511 /* WYRightMenuCenterViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYRightMenuCenterViewRow.m; sourceTree = "<group>"; };
+		C2AEE7C11D01B2F10028D511 /* WYRightMenuCenterViewRow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYRightMenuCenterViewRow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +214,8 @@
 				C214F99D1CFEF0B600B78F9E /* WYNewsTableViewController.m */,
 				C26EE3CA1CFFD6B100CB5E97 /* WYReadingTableViewController.h */,
 				C26EE3CB1CFFD6B100CB5E97 /* WYReadingTableViewController.m */,
+				C2AEE7B61D015F630028D511 /* WYRightMenuViewController.h */,
+				C2AEE7B71D015F630028D511 /* WYRightMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +234,7 @@
 		C214F97A1CFEC8B100B78F9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2AEE7B81D015F630028D511 /* WYRightMenuViewController.xib */,
 				C214F97B1CFEC8B100B78F9E /* WYLeftMenu.h */,
 				C214F97C1CFEC8B100B78F9E /* WYLeftMenu.m */,
 				C214F98D1CFEDCE000B78F9E /* WYTitleView.h */,
@@ -230,6 +243,9 @@
 				C26EE3CE1D00295B00CB5E97 /* WYLeftMenuButton.m */,
 				C26EE3D21D005C9300CB5E97 /* WYNavigationBar.h */,
 				C26EE3D31D005C9300CB5E97 /* WYNavigationBar.m */,
+				C2AEE7BE1D01B2AB0028D511 /* WYRightMenuCenterViewRow.h */,
+				C2AEE7BF1D01B2AB0028D511 /* WYRightMenuCenterViewRow.m */,
+				C2AEE7C11D01B2F10028D511 /* WYRightMenuCenterViewRow.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,7 +356,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AEE7BA1D015F630028D511 /* WYRightMenuViewController.xib in Resources */,
 				C214F9861CFEC91900B78F9E /* Info.plist in Resources */,
+				C2AEE7C21D01B2F10028D511 /* WYRightMenuCenterViewRow.xib in Resources */,
 				C214F9331CFE7B6600B78F9E /* LaunchScreen.storyboard in Resources */,
 				C214F9301CFE7B6600B78F9E /* Assets.xcassets in Resources */,
 				C214F92E1CFE7B6600B78F9E /* Main.storyboard in Resources */,
@@ -369,7 +387,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C214F97F1CFEC8B100B78F9E /* WYMainViewController.m in Sources */,
+				C2AEE7C01D01B2AB0028D511 /* WYRightMenuCenterViewRow.m in Sources */,
 				C214F97E1CFEC8B100B78F9E /* UIView+Extension.m in Sources */,
+				C2AEE7B91D015F630028D511 /* WYRightMenuViewController.m in Sources */,
 				C26EE3CF1D00295B00CB5E97 /* WYLeftMenuButton.m in Sources */,
 				C214F99E1CFEF0B600B78F9E /* WYNewsTableViewController.m in Sources */,
 				C214F97D1CFEC8B100B78F9E /* UIImage+color.m in Sources */,

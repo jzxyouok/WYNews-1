@@ -11,12 +11,18 @@
 #import "WYNewsTableViewController.h"
 #import "WYNavigationController.h"
 #import "WYReadingTableViewController.h"
+#import "WYRightMenuViewController.h"
 #import "WYTitleView.h"
 #define WYNavShowAnimation 0.25
 #define WYCoverTag 100
+#define WYLeftMenuW 150
+#define WYLeftMenuH 300
+#define WYLeftMenuY 50
 
 @interface WYMainViewController () <WYLeftMenuDelegate>
-@property (nonatomic,weak) WYNavigationController *showingNavigationController;
+@property (nonatomic,strong) WYNavigationController *showingNavigationController;
+@property (nonatomic,weak) UIView *leftView;
+@property (nonatomic,strong) WYRightMenuViewController *rightViewController;
 @end
 
 @implementation WYMainViewController
@@ -24,6 +30,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 1、初始化所有的控制器
+    [self setupAllVc];
+    
+    // 2、添加左菜单
+    [self addLeftMenuView];
+    
+    // 3、添加右菜单
+    [self addRightMenuView];
+}
+
+/**
+ *  初始化所有的控制器
+ */
+-(void)setupAllVc
+{
     // 2.1添加新闻控制器
     WYNewsTableViewController *news = [[WYNewsTableViewController alloc]init];
     [self setupChildVc:news title:@"新闻"];
@@ -43,17 +64,32 @@
     
     UIViewController *radio = [[UIViewController alloc]init];
     [self setupChildVc:radio title:@"电台"];
-    
-    // 1、添加左菜单
+}
+
+/**
+ *  添加左菜单
+ */
+-(void)addLeftMenuView
+{
     WYLeftMenu *leftMenu = [[WYLeftMenu alloc]init];
-    leftMenu.height = 300;
-    leftMenu.width = 200;
-    leftMenu.y = 60;
+    leftMenu.height = WYLeftMenuH;
+    leftMenu.width = WYLeftMenuW;
+    leftMenu.y = WYLeftMenuY;
     leftMenu.delegate = self;
-    
+    self.leftView = leftMenu;
     [self.view insertSubview:leftMenu atIndex:1];
 }
 
+/**
+ *  添加右菜单
+ */
+-(void)addRightMenuView
+{
+    WYRightMenuViewController *rightMenuVc = [[WYRightMenuViewController alloc]init];
+    rightMenuVc.view.x = self.view.width - rightMenuVc.view.width;
+    self.rightViewController = rightMenuVc;
+    [self.view insertSubview:rightMenuVc.view atIndex:1];
+}
 
 /**
  *  初始化控制器
@@ -89,14 +125,16 @@
  */
 -(void)leftMenu
 {
+    self.rightViewController.view.hidden = YES;
+    self.leftView.hidden = NO;
     [UIView animateWithDuration:0.25 animations:^{
         //          CGFloat scale = 300.0 / SCREEN_HEIGHT;
-        CGFloat scale = (SCREEN_HEIGHT - 60 * 2) / SCREEN_HEIGHT;
+        CGFloat scale = (SCREEN_HEIGHT - WYLeftMenuY * 2) / SCREEN_HEIGHT;
         // 菜单左边的间距
         CGFloat leftMenuMargin = SCREEN_WIDTH * (1 - scale) * 0.5;
-        CGFloat translateX = 200 - leftMenuMargin;
+        CGFloat translateX = WYLeftMenuW - leftMenuMargin;
         CGFloat topMargin = SCREEN_HEIGHT * (1 - scale) * 0.5;
-        CGFloat translateY = topMargin - 60;
+        CGFloat translateY = topMargin - WYLeftMenuY;
         
         // 缩放
         CGAffineTransform scaleForm =  CGAffineTransformMakeScale(scale, scale);
@@ -118,7 +156,34 @@
 
 -(void)rightMenu
 {
-    MyLog(@"right");
+    self.leftView.hidden = YES;
+    self.rightViewController.view.hidden = NO;
+    [UIView animateWithDuration:0.25 animations:^{
+        //          CGFloat scale = 300.0 / SCREEN_HEIGHT;
+        CGFloat scale = (SCREEN_HEIGHT - WYLeftMenuY * 2) / SCREEN_HEIGHT;
+        // 菜单左边的间距
+        CGFloat leftMenuMargin = SCREEN_WIDTH * (1 - scale) * 0.5;
+        CGFloat translateX = self.rightViewController.view.width - leftMenuMargin;
+        CGFloat topMargin = SCREEN_HEIGHT * (1 - scale) * 0.5;
+        CGFloat translateY = topMargin - WYLeftMenuY;
+        
+        // 缩放
+        CGAffineTransform scaleForm =  CGAffineTransformMakeScale(scale, scale);
+        
+        // 平移
+        CGAffineTransform translateForm =  CGAffineTransformTranslate(scaleForm, -translateX / scale, -translateY / scale);
+        
+        _showingNavigationController.view.transform = translateForm;
+        
+        // 添加一个遮盖
+        UIButton *cover = [[UIButton alloc]init];
+        cover.tag = WYCoverTag;
+        cover.frame = _showingNavigationController.view.bounds;
+        [cover addTarget:self action:@selector(coverClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_showingNavigationController.view addSubview:cover];
+    } completion:^(BOOL finished) {
+        [self.rightViewController didShow];
+    }];
 }
 
 -(void)coverClick:(UIButton *)cover
