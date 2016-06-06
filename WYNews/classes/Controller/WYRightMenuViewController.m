@@ -71,12 +71,12 @@
 //        self.iconView.image = [UIImage imageNamed:@"promoboard_icon_apps"];
 //    }];
     [UIView transitionWithView:self.iconView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
-        
+        self.iconView.image = [UIImage imageNamed:@"user_defaultgift"];
     } completion:^(BOOL finished) {
-        self.iconView.image = [UIImage imageNamed:@"promoboard_icon_activities"];
+        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView transitionWithView:self.iconView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                self.iconView.image = [UIImage imageNamed:@"icon"];
+                self.iconView.image = [UIImage imageNamed:@"default_avatar"];
             } completion:nil];
         });
     }];

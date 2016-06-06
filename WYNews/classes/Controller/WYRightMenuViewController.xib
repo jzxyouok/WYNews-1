@@ -25,7 +25,7 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-vk-JrU" userLabel="topView">
                     <rect key="frame" x="30" y="38" width="200" height="142"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rk8-dZ-pTv">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Rk8-dZ-pTv">
                             <rect key="frame" x="65" y="8" width="70" height="70"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="立即登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpS-ah-AcJ">
@@ -110,7 +110,7 @@
         </view>
     </objects>
     <resources>
-        <image name="icon" width="100" height="100"/>
+        <image name="default_avatar" width="70" height="70"/>
         <image name="pluginboard_icon_add" width="50" height="50"/>
         <image name="pluginboard_icon_comment" width="50" height="50"/>
         <image name="pluginboard_icon_favor" width="50" height="50"/>
